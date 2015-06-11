@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en" ng-app="GitUserSearch">
+  <head>
+    <meta charset="utf-8">
+    <title>Github user search</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/gitUserSearchController.js"></script>
+    <script src="js/searchFactory.js"></script>
+  </head>
+
+  <body ng-controller="GitUserSearchController as searchCtrl">
+    <div>
+
+      <label class="formgroup">
+          <input type="radio" ng-model="searchCtrl.direction" name="direction" checked>
+          ascending
+      </label>
+      <label class="formgroup">
+          <input type="radio" ng-model="searchCtrl.direction" name="direction" value="reverse">
+          descending
+      </label>
+      <form class="form-horizontal">
+        <input type="text" ng-model="searchCtrl.searchTerm" ng-change="searchCtrl.doSearch()"
+        ng-model-options="{ updateOn: 'default blur', debounce: {'default': 500, 'blur': 0} }">
+        <button class="btn" ng-click="searchCtrl.doSearch()">Search</button>
+        <p>Search results for:&nbsp; &nbsp; <span style="color:#337ab7; font-size:16px;">{{searchCtrl.searchTerm}}</span></p>
+      </form>
+      <ul class="list-group" ng-repeat="user in searchCtrl.searchResult.items | limitTo: 10 |  orderBy: 'login' : searchCtrl.direction">
+        <li>
+          <img ng-src="{{user.avatar_url}}&s=80">
+          <a ng-href="{{user.html_url}}">{{user.login}}</a><br/>
+          <div class="side">
+            <ul>
+                  <li>Repos: {{user.repos_url.length}}</li>
+                  <li>Organizations: {{user.organizations_url.length}}</li>
+                  <li>Followers: {{user.followers_url.length}}</li>
+                  <li>Following: {{user.following_url.length}}</li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

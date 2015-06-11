@@ -1,0 +1,50 @@
+body {
+  width: 500px;
+  margin:0 auto;
+  margin-top:3em;
+  margin-bottom: 3em;
+}
+
+div {
+  background-color: #f8f8f8;
+  padding:1em;
+  width:80%;
+  margin: 0 auto;
+  border-radius: 5px;
+  box-shadow:0px 1px 6px rgba(0,0,0,.5);
+}
+
+
+form {
+  margin-bottom:3em;
+}
+
+img {
+  margin-right:1em;
+  border-radius: 5px;
+}
+
+ul {
+  width:90%;
+  margin: 0 auto;
+}
+
+
+li {
+  list-style: none;
+  overflow: hidden;
+}
+
+p {
+  margin-top: 30px;
+  background-color: #d4d4d4;
+  padding:10px;
+  border-radius: 5px;
+  color:#383838;
+}
+
+.side {
+  margin:10px;
+  width: 75%;
+  margin-bottom: 20px;
+}
