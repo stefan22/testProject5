@@ -1,5 +1,4 @@
 #testProject5  -- ANGULAR using Grunt 
-=====================================
 
  > heroku app => http://githubprofiles.herokuapp.com/
 
