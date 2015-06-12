@@ -11,7 +11,7 @@
 
 
 ### Description
-    ===========
+
 
 Setup Grunt.js and Sass folder/files
 
