@@ -1,0 +1,1 @@
+githubUserSearch.controller("GitUserSearchController",["Search",function(a){var b=this;b.doSearch=function(){a.query(b.searchTerm).then(function(a){b.searchResult=a.data})}}]);

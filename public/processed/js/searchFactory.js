@@ -1,0 +1,1 @@
+githubUserSearch.factory("Search",["$http",function(a){var b="https://api.github.com/search/users";return{query:function(c){return a({url:b,method:"GET",params:{q:c}})}}}]);
