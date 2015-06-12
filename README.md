@@ -19,7 +19,7 @@
 -Added all files in my JS folder to Grunt watch and assigned them
  Grunt watch to automatically Uglify.
 
--Assigned Grunt a default task under watch.
+-Assigned Grunt a default task under watch. Also added all html files to watch task.
 
 -Added livereload task to Grunt
   It works fine with a regular workflow/setup
