@@ -26,5 +26,5 @@ Assigned Grunt a default task under watch.
 Added livereload task to Grunt
   It works fine with a regular workflow/setup
  
- Issues: running livereload on port 9292 - it doesn't affect anything though
+ Issues: running livereload on port 9292 - (it doesn't affect anything though)
           as an app with rackup
