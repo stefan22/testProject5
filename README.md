@@ -13,18 +13,19 @@
 ### Description
 
 
-Setup Grunt.js and Sass folder/files
+-Setup Grunt.js and Sass folder/files
 
-Processed/tested Grunt uglify to minimize my javascript files - ok
-  processed all files in my js folder using grunt uglify
+-Processed/tested Grunt uglify to minimize my javascript files - ok
 
-Added all files in my JS folder to Grunt watch and assigned them
-Grunt watch to automatically Uglify.
+-Processed all files in my js folder using grunt uglify
 
-Assigned Grunt a default task under watch.
+-Added all files in my JS folder to Grunt watch and assigned them
+ Grunt watch to automatically Uglify.
 
-Added livereload task to Grunt
+-Assigned Grunt a default task under watch.
+
+-Added livereload task to Grunt
   It works fine with a regular workflow/setup
  
- Issues: running livereload on port 9292 - (it doesn't affect anything though)
+-Issues: running livereload on port 9292 - (it doesn't affect anything though)
           as an app with rackup
