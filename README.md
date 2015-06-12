@@ -14,8 +14,6 @@
 
 -Setup Grunt.js and Sass folder/files
 
--Processed/tested Grunt uglify to minimize my javascript files - ok
-
 -Processed all files in my js folder using grunt uglify
 
 -Added all files in my JS folder to Grunt watch and assigned them
