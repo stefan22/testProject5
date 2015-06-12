@@ -9,7 +9,6 @@
    =================
 > Grunt automated tasks: Uglify, Watch, livereload, Sass and default tasks.
 
-  <!-- ![sample search](public/images/image.png)   -->
 
 ### Description
     ===========
